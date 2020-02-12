@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="techdoc.css">
+</head>
+<body>
+    <nav class="navbar">
+        <header><h2>JS Documentation</h2></header>
+          <ul>
+            <li class="nav-link"><a href="#js-home">JS Home</a></li>
+            <li class="nav-link"><a href="#js-introduction">JS Introduction</a></li>
+            <li class="nav-link"><a href="#js-syntax">JS Syntax</a></li>
+            <li class="nav-link"><a href="#js-operators">JS Operators</a></li>
+            <li class="nav-link"><a href="#js-data-types">JS Data Types</a></li>
+            <li class="nav-link"><a href="#js-functions">JS Functions</a></li>
+            <li class="nav-link"><a href="#js-objects">JS Objects</a></li>
+          </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="js-home">
+          <header><h3>Home</h3></header>
+          <p>JavaScript is the programming language of HTML and the Web.
+      JavaScript is easy to learn.
+      This tutorial will teach you JavaScript from basic to advanced.<p>
+          <ul>
+            <li>With our "Try it Yourself" editor, you can edit the source code and view the result.</li>
+            <li><p>Examples are better than 1000 words. Examples are often easier to understand than text explanations.
+              This tutorial supplements all explanations with clarifying "Try it Yourself" examples.</p></li>
+          </ul>
+        </section>
+        <section class="main-section" id="js-introduction">
+          <header><h3>Introduction</h3></header>
+          <ul>
+            <li>JavaScript Can Change HTML Content
+      One of many JavaScript HTML methods is getElementById().
+      <p>This example uses the method to "find" an HTML element (with id="demo") and changes the element content (innerHTML) to "Hello JavaScript":</p>
+      Example<br>  <code>document.getElementById("demo").innerHTML = "Hello JavaScript";</code></li><br>
+            <li>JavaScript Can Change HTML Attribute Values
+              <p>In this example JavaScript changes the value of the src (source) attribute of an image tag:</p></li>
+          </ul>
+        </section>
+        <section class="main-section" id="js-syntax">
+          <header><h3>Syntax</h3></header>
+          <ul>
+            <li><p>JavaScript Values
+      The JavaScript syntax defines two types of values: Fixed values and variable values.
+              Fixed values are called literals. Variable values are called variables.</p></li>
+            <li><p>JavaScript Literals
+      The most important rules for writing fixed values are:
+              Numbers are written with or without decimals:<br>Strings are text, written within double or single quotes:</p></li>
+          </ul>
+        </section>
+        <section class="main-section" id="js-operators">
+          <header><h3>Operators</h3></header>
+          <ul>
+            <li>Assign values to variables and add them together:<br>
+              <code>
+      var x = 5;         // assign the value 5 to x<br>
+      var y = 2;         // assign the value 2 to y<br>
+                var z = x + y;     // assign the value 7 to z (x + y)</code></li>
+            <li>The assignment operator (=) assigns a value to a variable.<br>
+      
+              Assignment<br>
+              <code>var x = 10;</code></li>
+            <li><p>The addition operator (+) adds numbers:</p>
+      Adding<br>
+              <code>
+      var x = 5;<br>
+      var y = 2;<br>
+              var z = x + y;</code></li>
+          </ul>
+        </section>
+        <section class="main-section" id="js-data-types">
+          <header><h3>Data Types</h3></header>
+          <ul>
+            <li><p>JavaScript variables can hold many data types: numbers, strings, objects and more:</p>
+      <code>
+      var length = 16;                               // Number<br>
+      var lastName = "Johnson";                      // String<br>
+        var x = {firstName:"John", lastName:"Doe"};    // Object</code></li>
+            <li>In programming, data types is an important concept.
+      
+              <p>To be able to operate on variables, it is important to know something about the type.</p>
+      
+              <p>Without data types, a computer cannot safely solve this:</p>
+      <code>
+        var x = 16 + "Volvo";</code></li>
+            <li>JavaScript evaluates expressions from left to right. Different sequences can produce different results:<br><br>
+      
+      JavaScript:<br><code>
+              var x = 16 + 4 + "Volvo";</code></li>
+          </ul>
+        </section>
+        <section class="main-section" id="js-functions">
+          <header><h3>Functions</h3></header>
+          <ul>
+            <li>A JavaScript function is a block of code designed to perform a particular task.
+              <p>A JavaScript function is executed when "something" invokes it (calls it).</p>
+      Example<br><code>
+      function myFunction(p1, p2) {
+              return p1 * p2;   // The function returns the product of p1 and p2}</code></li>
+            <li>Function Return
+      When JavaScript reaches a return statement, the function will stop executing.
+      
+      <p>If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.</p>
+      
+              <p>Functions often compute a return value. The return value is "returned" back to the "caller":</p></li>
+            <li>Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.
+      <br><br>
+      Example
+      Instead of using a variable to store the return value of a function:<br>
+      <code>
+      var x = toCelsius(77);<br>
+      var text = "The temperature is " + x + " Celsius";<br>
+      You can use the function directly, as a variable value:<br>
+      
+        var text = "The temperature is " + toCelsius(77) + " Celsius";</code></li>
+          </ul>
+        </section>
+        <section class="main-section" id="js-objects">
+          <header><h3>Objects</h3></header>
+          <ul>
+            <li>In real life, a car is an object.
+      
+      A car has properties like weight and color, and methods like start and stop:</li>
+            <li><p>You have already learned that JavaScript variables are containers for data values.</p>
+              This code assigns a simple value (Fiat) to a variable named car:<br>
+              <code>var car = "Fiat";</code></li>
+            <li>You define (and create) a JavaScript object with an object literal:<br><br>
+      Example<br><code>
+              var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</code></li>
+          </ul>
+        </section>
+      </main>
+</body>
+</html>
